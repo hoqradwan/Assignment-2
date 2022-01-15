@@ -193,7 +193,10 @@ body {
 /* Mobile Devices */
 
 @media only screen and (max-width: 688px) {
-  .header-container {
+  .header-container,
+  .product-container,
+  .feature-container,
+  .footer-container {
     width: 100%;
   }
   .header-area,
@@ -219,7 +222,8 @@ body {
 @media only screen and (min-width: 688px) and (max-width: 992px) {
   .header-container,
   .product-container,
-  .feature-container {
+  .feature-container,
+  .footer-container {
     width: 100%;
   }
   .header-area {
