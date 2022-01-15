@@ -10,6 +10,12 @@ body {
   margin-top: 90px;
   font-size: 20px;
 }
+/*--------------------
+   header area styles 
+ --------------------*/
+/* .header-container{
+     display: flex;
+ } */
 .header-area {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -50,8 +56,14 @@ body {
 /*-----------------
    product styles
 -------------------- */
+.product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .product-title {
-  margin-top: 250px;
+  margin-top: 180px;
   text-align: center;
   font-size: 30px;
 }
@@ -60,10 +72,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  margin-top: 60px;
+  /* margin-top: 60px;
   margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 300px;
+  margin-right: 160px;
+  margin-bottom: 150px; */
 }
 .product {
   width: 280px;
@@ -98,15 +110,20 @@ body {
    feature styles
 ------------------ */
 .feature-title {
-  margin-top: 250px;
+  margin-top: 100px;
   margin-bottom: 80px;
   text-align: center;
   font-size: 30px;
 }
 .feature-container {
-  margin-top: 60px;
+  /* margin-top: 60px;
   margin-left: 120px;
-  margin-right: 120px;
+  margin-right: 120px; */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 .features {
   display: grid;
@@ -115,8 +132,8 @@ body {
 }
 
 .feature {
-  width: 280px;
-  height: 476px;
+  width: 300px;
+  height: 300px;
   text-align: center;
 }
 .red-icon {
@@ -166,14 +183,26 @@ body {
   .products,
   .features {
     grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
   }
-  .product-title {
+  /* .product-title {
     text-align: center;
     margin-bottom: 100px;
     margin-left: 150px;
     margin-right: 150px;
+  } */
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
+
 /* tablet devices */
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
@@ -188,16 +217,22 @@ body {
   }
   .features {
     grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 60px;
   }
-  .feature-title {
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    
+  }
+  /* .feature-title {
     text-align: center;
-    /* margin-left: 150px; */
     margin-bottom: 100px;
-    /* margin-left: 120px; */
     margin-right: 250px;
   }
   .feature {
     align-items: center;
     margin-left: 200px;
-  }
+  } */
 }
