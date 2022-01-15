@@ -126,9 +126,13 @@ body {
 .fa-star.blank {
   color: #aeaeae;
 }
-.see-more{
+.see-more {
+  text-decoration: none;
   color: #e02c6d;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
   padding-right: 180px;
   font-weight: 700;
 }
