@@ -126,6 +126,12 @@ body {
 .fa-star.blank {
   color: #aeaeae;
 }
+.see-more{
+  color: #e02c6d;
+  text-align: right;
+  padding-right: 180px;
+  font-weight: 700;
+}
 
 /*----------------
    feature styles
